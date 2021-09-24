@@ -42,19 +42,5 @@ public class BreedControllerUnitTest {
         mockMvc.perform(get("/api/breeds/list/all"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON));
-//
-//                // Validate headers
-//                .andExpect(header().string(HttpHeaders.LOCATION, "/rest/widget/1"))
-//                .andExpect(header().string(HttpHeaders.ETAG, "\"1\""))
-//
-//                // Validate the returned fields
-//                .andExpect(jsonPath("$.id", is(1)))
-//                .andExpect(jsonPath("$.name", is("Widget Name")))
-//                .andExpect(jsonPath("$.description", is("Description")))
-//                .andExpect(jsonPath("$.version", is(1)));
     }
-
-
-
-
 }
